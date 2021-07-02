@@ -1,18 +1,63 @@
-/* Error: Expected expression.
- *   ,
- * 2 |     display: ;
- *   |              ^
- *   '
- *   sass\pages\_header.scss 2:14  @import
- *   sass\main.scss 4:9            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 2 \2502      display: ;\d\a   \2502               ^\a   \2575 \a   sass\\pages\\_header.scss 2:14  @import\a   sass\\main.scss 4:9            root stylesheet";
+.primary-color {
+  color: #9356DC;
 }
+
+.secondary-color {
+  color: #FF79DA;
+}
+
+.tertiary-color {
+  color: #FF79DA;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.menu-card__image {
+  max-width: 100%;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+header img {
+  max-width: 40%;
+}
+
+#header i {
+  display: none;
+}
+
+.resto-location__city {
+  display: flex;
+  background-color: #F2F2F2;
+}
+
+#resto-location__logo i {
+  font-size: 1.75rem;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

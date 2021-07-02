@@ -1,13 +1,26 @@
-.primary-color {
-  color: #9356DC;
+/*.primary-color {
+    color: $primary-color;
 }
 
 .secondary-color {
-  color: #FF79DA;
+    color: $secondary-color;
 }
 
 .tertiary-color {
-  color: #FF79DA;
+    color: $secondary-color;
+}
+
+.footer-color {
+    color: #191919;
+}*/
+.fa-utensils {
+  font-size: 0.8rem;
+  margin-right: 15px;
+}
+
+.fa-hands-helping {
+  font-size: 0.8rem;
+  margin-right: 10px;
 }
 
 body {
@@ -31,6 +44,11 @@ a {
   color: black;
 }
 
+header img,
+footer img {
+  max-width: 40%;
+}
+
 .menu-card__image {
   max-width: 100%;
 }
@@ -46,13 +64,39 @@ header img {
   max-width: 40%;
 }
 
+footer {
+  background: #333333;
+  padding-bottom: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer h3 {
+  color: white;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+footer a {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 #header i {
   display: none;
 }
 
 .resto-location__city {
   display: flex;
-  background-color: #F2F2F2;
+  background: #F2F2F2;
 }
 
 #resto-location__logo i {

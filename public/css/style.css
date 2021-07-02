@@ -33,9 +33,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-style: normal;
 }
 
 a {
@@ -60,10 +59,6 @@ footer img {
   margin-top: 10px;
 }
 
-header img {
-  max-width: 40%;
-}
-
 footer {
   background: #333333;
   padding-bottom: 20px;
@@ -79,6 +74,7 @@ footer li {
 }
 
 footer h3 {
+  font-family: "Shrikhand", sans-serif;
   color: white;
   padding-top: 30px;
   padding-left: 20px;
@@ -87,21 +83,46 @@ footer h3 {
 footer a {
   color: white;
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 #header i {
   display: none;
 }
 
-.resto-location__city {
-  display: flex;
+.resto-location {
   background: #F2F2F2;
 }
 
-#resto-location__logo i {
-  font-size: 1.75rem;
-  color: black;
+#resto-location__place p {
+  margin-top: 0;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.resto-location h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+#resto-location__place {
+  display: flex;
+  justify-content: center;
+  background: #e7e6e6;
+  font-size: 0.9rem;
+  color: #333333;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  box-shadow: 0px 2px 17px 0px rgba(117, 115, 115, 0.44) inset;
+}
+
+#resto-location__title h1,
+p {
+  text-align: center;
+}
+
+#resto-location__title p {
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
 
 .resto-location {
     background: #F2F2F2;
+    padding-bottom: 50px;
 }
 
 #resto-location__place p {
@@ -35,4 +36,19 @@ p {
 
 #resto-location__title p {
     font-weight: 300;
+}
+
+.resto-location__button {
+    width: 200px;
+    height: 40px;
+    background-color: $secondary-color;
+    border: $secondary-color;
+    border-radius: 20px;
+    box-shadow: -1px -1px 48px -3px rgba(147, 86, 220, 0.77) inset;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.resto-location__button span {
+    color: white;
 }

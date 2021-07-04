@@ -1,54 +1,76 @@
-#header i {
-    display: none;
-}
-
-.resto-location {
-    background: #F2F2F2;
-    padding-bottom: 50px;
-}
-
-#resto-location__place p {
-    margin-top: 0;
-    margin-left: 15px;
-    font-weight: 500;
-}
-
-.resto-location h1 {
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-#resto-location__place {
-    display: flex;
-    justify-content: center;
-    background: #e7e6e6;
-    font-size: 0.9rem;
-    color: $footer-color;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    box-shadow: 0px 2px 17px 0px rgba(117, 115, 115, 0.44) inset;
-}
-
-#resto-location__title h1,
-p {
-    text-align: center;
-}
-
-#resto-location__title p {
-    font-weight: 300;
-}
-
-.resto-location__button {
-    width: 200px;
-    height: 40px;
-    background-color: $secondary-color;
-    border: $secondary-color;
-    border-radius: 20px;
-    box-shadow: -1px -1px 48px -3px rgba(147, 86, 220, 0.77) inset;
-    margin-left: 70px;
-    margin-top: 20px;
-}
-
-.resto-location__button span {
-    color: white;
-}
+    #header i {
+        display: none;
+    }
+    
+    .resto-location {
+        background: #F2F2F2;
+        padding-bottom: 50px;
+    }
+    
+    #resto-location__place p {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+    
+    .resto-location h1 {
+        margin-bottom: 0;
+    }
+    
+    #resto-location__place {
+        display: flex;
+        justify-content: center;
+        background: #e7e6e6;
+        font-size: 0.9rem;
+        color: $footer-color;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        box-shadow: 0px 2px 17px 0px rgba(117, 115, 115, 0.44) inset;
+    }
+    
+    #resto-location__title h1,
+    p {
+        text-align: center;
+    }
+    
+    #resto-location__title p {
+        font-weight: 300;
+    }
+    
+    .resto-location__button {
+        height: 40px;
+        background-color: #F2F2F2;
+        border: #f5f4f4;
+        border-radius: 10px;
+        box-shadow: 6px 6px 6px 6px #f5f4f4;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    
+    .resto-location__button span {
+        color: white;
+    }
+    
+    .working-filter {
+        padding-bottom: 40px;
+    }
+    
+    .working-filter h1 {
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+    
+    .filter-button__number>div:nth-child(1) {
+        margin-top: 2px;
+    }
+    
+    .filter-button__icon {
+        font-size: 1.1rem;
+        color: gray;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    
+    .filter-button p {
+        margin-top: 22px;
+        margin-left: 30px;
+    }

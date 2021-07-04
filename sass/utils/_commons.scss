@@ -22,11 +22,11 @@ a {
     color: black;
 }
 
-header img,
-footer img {
-    max-width: 40%;
+img {
+    width: 100%;
 }
 
-.menu-card__image {
-    max-width: 100%;
+.menu-title h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: normal;
 }

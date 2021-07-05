@@ -1,7 +1,7 @@
 @import "utils/variables";
 @import "utils/classes";
-@import "utils/commons";
-@import "pages/header";
-@import "pages/footer";
+@import "base/commons";
+@import "layouts/header";
+@import "layouts/footer";
 @import "pages/accueil";
-@import "pages/la-palette-du-gout"
+@import "pages/la-palette-du-gout";

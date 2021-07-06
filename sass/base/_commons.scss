@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -12,10 +16,6 @@ h5 {
     font-weight: 700;
 }
 
-h1 {
-    margin-left: 15px;
-}
-
 a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -23,7 +23,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .menu-title h1 {

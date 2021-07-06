@@ -1,14 +1,12 @@
-#header {
+header {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
     margin-top: 10px;
-}
-
-#header i {
-    display: none;
-}
-
-header img {
-    width: 40%;
+    .homepage {
+        display: none;
+    }
+    img {
+        max-width: 40%;
+    }
 }

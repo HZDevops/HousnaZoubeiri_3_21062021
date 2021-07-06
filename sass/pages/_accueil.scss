@@ -1,112 +1,53 @@
-   .resto-location {
-       background: #F2F2F2;
-       padding-bottom: 50px;
-   }
-   
-   #resto-location__place p {
-       margin-top: 0;
-       margin-left: 15px;
-   }
-   
-   .resto-location h1 {
-       margin-bottom: 0;
-   }
-   
-   #resto-location__place {
-       display: flex;
-       justify-content: center;
-       background: #e7e6e6;
-       font-size: 0.9rem;
-       color: $footer-color;
-       padding-top: 15px;
-       padding-bottom: 5px;
-       box-shadow: 0px 2px 17px 0px rgba(117, 115, 115, 0.44) inset;
-   }
-   
-   #resto-location__title h1,
-   p {
-       text-align: center;
-   }
-   
-   #resto-location__title p {
-       font-weight: 300;
-   }
-   
-   .resto-location__button {
-       width: 200px;
-       height: 40px;
-       background-color: $secondary-color;
-       border: $secondary-color;
-       border-radius: 20px;
-       box-shadow: -1px -1px 48px -3px rgba(147, 86, 220, 0.77) inset;
-       margin-left: 70px;
-       margin-top: 20px;
-   }
-   
-   .resto-location__button span {
-       color: white;
-   }
-   
-   .working-filter {
-       padding-bottom: 40px;
-   }
-   
-   .working-filter h1 {
-       margin-top: 40px;
-       margin-bottom: 25px;
-   }
-   
-   .filter-button__number>div:nth-child(1) {
-       margin-top: 2px;
-   }
-   
-   .filter-button__icon {
-       font-size: 1.1rem;
-       color: gray;
-       margin-top: 20px;
-       margin-left: 5px;
-   }
-   
-   .filter-button p {
-       margin-top: 22px;
-       margin-left: 30px;
-   }
-   
-   .restaurant {
-       background: #F2F2F2;
-       padding-top: 30px;
-       padding-bottom: 30px;
-   }
-   
-   .menu-card {
-       width: 90%;
-       background-color: white;
-       border-radius: 20px;
-       box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
-       margin-bottom: 20px;
-       margin-left: 20px;
-   }
-   
-   .menu-card__image {
-       height: 175px;
-       border-radius: 20px 20px 0 0;
-   }
-   
-   .menu-card__info {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       width: 90%;
-       margin-left: 10px;
-   }
-   
-   .menu-card__info h3 {
-       width: 100%;
-       margin-top: 5px;
-       margin-bottom: 0px;
-   }
-   
-   .menu-card__info p {
-       margin-top: 5px;
-       text-align: left;
-   }
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $bkgd-color-two;
+    padding-bottom: 50px;
+}
+
+#resto-location__city {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.9rem;
+    color: $bkgd-color-one;
+    font-weight: bold;
+    background-color: #e7e6e6;
+    box-shadow: 0px 2px 17px 0px rgba(117, 115, 115, 0.44) inset;
+    i {
+        display: inline;
+        align-self: center;
+        padding-right: 10px;
+    }
+}
+
+#resto-location__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
+#working {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+    h1 {
+        margin-right: 125px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+.restaurant {
+    background: #F2F2F2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

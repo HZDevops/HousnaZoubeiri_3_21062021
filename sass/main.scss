@@ -1,10 +1,11 @@
 @import "utils/variables";
 @import "utils/classes";
 @import "base/commons";
-@import "components/button";
+@import "components/homepage-button";
+@import "components/menu-button";
 @import "components/filter";
 @import "components/card";
 @import "layouts/header";
 @import "layouts/footer";
-@import "pages/accueil";
-@import "pages/la-palette-du-gout";
+@import "pages/homepage";
+@import "pages/menu-page";

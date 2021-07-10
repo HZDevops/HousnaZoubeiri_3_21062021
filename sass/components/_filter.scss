@@ -1,12 +1,15 @@
 .working-filter {
     display: flex;
-    width: 300px;
+    width: 90%;
     height: 60px;
     background-color: $bkgd-color-two;
     border: solid 1px $bkgd-color-two;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
     margin-bottom: 20px;
+    @media (min-width: 768px) {
+        width: 30%;
+    }
     .working-filter__number {
         height: 20px;
         width: 20px;
@@ -24,7 +27,7 @@
         font-size: 1.1rem;
         color: gray;
         margin-top: 20px;
-        margin-left: 5px;
+        margin-left: 20px;
     }
     .working-filter__txt {
         font-size: 0.9rem;

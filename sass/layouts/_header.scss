@@ -1,12 +1,13 @@
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
     margin-top: 10px;
+    margin-bottom: 10px;
     .homepage {
         display: none;
     }
-    img {
+    .logo {
         max-width: 40%;
     }
 }

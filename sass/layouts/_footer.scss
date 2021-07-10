@@ -1,33 +1,51 @@
-    .fa-utensils {
-        font-size: 0.8rem;
-        margin-right: 15px;
+.fa-utensils {
+    font-size: 0.8rem;
+    margin-right: 15px;
+}
+
+.fa-hands-helping {
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: $bkgd-color-one;
+    padding-bottom: 20px;
+    h3 {
+        font-family: 'Shrikhand', sans-serif;
+        color: white;
+        padding-top: 30px;
+        padding-left: 20px;
+        margin-top: 0;
     }
-    
-    .fa-hands-helping {
-        font-size: 0.8rem;
-        margin-right: 10px;
-    }
-    
-    footer {
-        background-color: $bkgd-color-one;
-        padding-bottom: 20px;
-        h3 {
-            font-family: 'Shrikhand', sans-serif;
-            color: white;
-            padding-top: 30px;
-            padding-left: 20px;
-            margin-top: 0;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-            li {
-                margin-bottom: 10px;
-                a {
-                    color: white;
-                    font-size: 0.9rem;
-                    font-weight: 400;
-                }
+    ul {
+        list-style-type: none;
+        padding-left: 20px;
+        li {
+            margin-bottom: 10px;
+            a {
+                color: white;
+                font-size: 0.9rem;
+                font-weight: 400;
             }
         }
     }
+}
+
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+            width: 100%;
+            font-size: 1.6rem;
+            margin-bottom: 0;
+        }
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            font-size: 1.6rem;
+        }
+    }
+}

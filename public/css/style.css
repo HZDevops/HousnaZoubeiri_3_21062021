@@ -33,14 +33,20 @@ img {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
-  height: 40px;
-  background-color: #FF79DA;
-  border: #FF79DA;
-  border-radius: 20px;
-  box-shadow: -1px -1px 48px -3px rgba(147, 86, 220, 0.77) inset;
+  height: 50px;
+  border-radius: 50px;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  box-shadow: 2px 1px 7px grey;
   color: white;
   margin-top: 35px;
+}
+.button:hover {
+  background: linear-gradient(to top left, #9770c7, #fc95dd);
+  box-shadow: 6px 3px 8px gray;
 }
 @media (min-width: 768px) {
   .button {
@@ -100,6 +106,9 @@ img {
   box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
   margin-bottom: 20px;
 }
+.working-filter:hover {
+  background-color: #d9cbeb;
+}
 @media (min-width: 768px) {
   .working-filter {
     width: 30%;
@@ -123,6 +132,9 @@ img {
   color: gray;
   margin-top: 20px;
   margin-left: 20px;
+}
+.working-filter i:hover {
+  color: #9356DC;
 }
 .working-filter .working-filter__txt {
   font-size: 0.9rem;
@@ -166,6 +178,9 @@ img {
   align-self: last baseline;
   font-size: 1.5rem;
   color: #333333;
+}
+.menu-card__quote:active {
+  color: linear-gradient(to top left, #9356DC, #FF79DA);
 }
 
 @media (min-width: 768px) {

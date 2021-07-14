@@ -1,51 +1,54 @@
-                .menu-card {
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 90%;
-                    background-color: white;
-                    border-radius: 20px;
-                    box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
-                    margin-bottom: 20px;
-                    &__image {
-                        border-radius: 20px 20px 0 0;
-                    }
-                    &__info {
+                    .menu-card {
                         display: flex;
                         flex-wrap: wrap;
-                        justify-content: space-between;
                         width: 90%;
-                        height: 33%;
-                        margin-left: 10px;
-                        h3 {
-                            width: 50%;
-                            font-size: 1.1rem;
-                            margin-top: 10px;
-                            margin-bottom: 0px;
+                        background-color: white;
+                        border-radius: 20px;
+                        box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
+                        margin-bottom: 20px;
+                        &__image {
+                            border-radius: 20px 20px 0 0;
                         }
-                        p {
-                            width: 50%;
-                            margin-top: 5px;
-                            text-align: left;
-                        }
-                    }
-                    &__quote {
-                        align-self: last baseline;
-                        font-size: 1.5rem;
-                        color: $bkgd-color-one;
-                    }
-                }
-                
-                @media (min-width:768px) {
-                    .menu-card {
-                        width: 40%;
-                        margin-bottom: 40px;
                         &__info {
-                            width: 100%;
-                            margin-right: 10px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            width: 90%;
+                            height: 33%;
+                            margin-left: 10px;
+                            h3 {
+                                width: 50%;
+                                font-size: 1.1rem;
+                                margin-top: 10px;
+                                margin-bottom: 0px;
+                            }
                             p {
-                                margin-top: 0;
-                                padding-bottom: 10px;
+                                width: 50%;
+                                margin-top: 5px;
+                                text-align: left;
+                            }
+                        }
+                        &__quote {
+                            align-self: last baseline;
+                            font-size: 1.5rem;
+                            color: $bkgd-color-one;
+                            &:active {
+                                color: $gradient-color;
                             }
                         }
                     }
-                }
+                    
+                    @media (min-width:768px) {
+                        .menu-card {
+                            width: 40%;
+                            margin-bottom: 40px;
+                            &__info {
+                                width: 100%;
+                                margin-right: 10px;
+                                p {
+                                    margin-top: 0;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                        }
+                    }

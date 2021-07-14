@@ -7,6 +7,9 @@
     border-radius: 20px;
     box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
     margin-bottom: 20px;
+    &:hover {
+        background-color: $primary-color-light;
+    }
     @media (min-width: 768px) {
         width: 30%;
     }
@@ -28,6 +31,9 @@
         color: gray;
         margin-top: 20px;
         margin-left: 20px;
+        &:hover {
+            color: $primary-color;
+        }
     }
     .working-filter__txt {
         font-size: 0.9rem;

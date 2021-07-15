@@ -1,0 +1,14 @@
+.menu__flag {
+    position: absolute;
+    background-color: $tertiary-color;
+    color: #1a8f72;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.85rem;
+    right: 15px;
+    top: 15px;
+    p {
+        margin: 5px;
+    }
+}

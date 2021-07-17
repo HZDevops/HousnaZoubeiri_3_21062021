@@ -22,8 +22,20 @@
             border-top-color: $primary-color;
             border-bottom-color: $secondary-color;
             border-radius: 50%;
+            opacity: 0;
             transform: rotate(0.16turn);
-            animation: loading 1s ease infinite;
+            animation: loading 2s ease;
+        }
+        
+        @keyframes loading {
+            from {
+                transform: rotate(0turn);
+                opacity: 1;
+            }
+            to {
+                transform: rotate(1turn);
+                opacity: 0;
+            }
         }
         
         .location {

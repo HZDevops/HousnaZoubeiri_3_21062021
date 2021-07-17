@@ -43,7 +43,7 @@
     }
     &:hover {
         >.box {
-            transform: translateX(-100%);
+            transform: translateX(-90%);
         }
         >.menu-price {
             transform: translateX(-30%);
@@ -69,7 +69,7 @@
         transition: transform 330ms ease-in-out;
         i {
             color: white;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 }

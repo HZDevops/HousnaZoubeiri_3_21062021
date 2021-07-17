@@ -102,7 +102,7 @@ img {
   transition: transform 0.3s ease-in;
 }
 .menu-button:hover > .box {
-  transform: translateX(-100%);
+  transform: translateX(-90%);
 }
 .menu-button:hover > .menu-price {
   transform: translateX(-30%);
@@ -128,7 +128,7 @@ img {
 }
 .menu-button .box i {
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .working-filter {
@@ -359,10 +359,21 @@ footer ul li a {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
+  opacity: 0;
   transform: rotate(0.16turn);
-  animation: loading 1s ease infinite;
+  animation: loading 2s ease;
 }
 
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(1turn);
+    opacity: 0;
+  }
+}
 .location {
   display: flex;
   flex-wrap: wrap;

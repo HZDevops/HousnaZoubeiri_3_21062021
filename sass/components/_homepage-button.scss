@@ -10,7 +10,7 @@
         color: white;
         margin-top: 35px;
         &:hover {
-            background: $gradient-color-light;
+            background: $secondary-color;
             box-shadow: 6px 3px 8px gray;
         }
         @media (min-width: 768px) {

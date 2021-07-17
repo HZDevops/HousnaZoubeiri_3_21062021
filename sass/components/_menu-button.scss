@@ -1,37 +1,73 @@
-    .menu-button {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 95%;
-        height: 65px;
-        background-color: white;
-        border: solid 1px white;
-        border-radius: 20px;
-        box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
-        margin-bottom: 20px;
-        padding-left: 10px;
-        @media (min-width: 768px) {
-            width: 30%;
+.menu-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    height: 65px;
+    position: relative;
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 20px;
+    box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
+    margin-bottom: 20px;
+    padding-left: 10px;
+    @media (min-width: 768px) {
+        width: 30%;
+    }
+    h3 {
+        width: 70%;
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0
+    }
+    p {
+        text-align: left;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 5px;
+        position: absolute;
+        width: 80%;
+        left: 10px;
+        top: 30px;
+        right: 5px;
+    }
+    .menu-price {
+        font-weight: bold;
+        left: 300px;
+        transition: transform 0.3s ease-in;
+    }
+    &:hover {
+        >.box {
+            transform: translateX(-80%);
         }
-        h3 {
-            width: 100%;
-            font-size: 1rem;
-            text-align: left;
-            margin-top: 10px;
-            margin-bottom: 0;
+        >.menu-price {
+            transform: translateX(-30%);
         }
-        p {
-            text-align: left;
-            font-size: 0.8rem;
-            width: 185px;
-            white-space: nowrap;
-            overflow: hidden;
+        >.menu-description {
             text-overflow: ellipsis;
-            margin-top: 5px;
-        }
-        .menu-price {
-            width: min-content;
-            font-weight: bold;
-            margin-right: 10px;
+            overflow: hidden;
         }
     }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 65px;
+        position: absolute;
+        right: -70px;
+        background-color: $tertiary-color;
+        transform-origin: right 50%;
+        border-radius: 0 20px 20px 0;
+        transition: transform 330ms ease-in-out;
+        i {
+            color: white;
+            font-size: 2rem;
+        }
+    }
+}

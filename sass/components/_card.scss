@@ -1,54 +1,75 @@
-                    .menu-card {
-                        display: flex;
-                        flex-wrap: wrap;
-                        width: 90%;
-                        background-color: white;
-                        border-radius: 20px;
-                        box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
-                        margin-bottom: 20px;
-                        position: relative;
-                        &__image {
-                            border-radius: 20px 20px 0 0;
-                        }
-                        &__info {
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            width: 90%;
-                            margin-left: 10px;
-                            h3 {
-                                width: 50%;
-                                font-size: 1.1rem;
-                                margin-top: 10px;
-                                margin-bottom: 0px;
-                            }
-                            p {
-                                width: 50%;
-                                margin-top: 5px;
-                                text-align: left;
-                            }
-                        }
-                        &__quote {
-                            align-self: last baseline;
-                            font-size: 1.5rem;
-                            color: $bkgd-color-one;
-                            &:active {
-                                color: $gradient-color;
-                            }
-                        }
+    .menu-card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
+        margin-bottom: 20px;
+        position: relative;
+        &__image {
+            border-radius: 20px 20px 0 0;
+        }
+        &__info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 90%;
+            margin-left: 10px;
+            position: relative;
+            h3 {
+                width: 100%;
+                font-size: 1.1rem;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            p {
+                width: 50%;
+                margin-top: 0;
+                text-align: left;
+            }
+        }
+        &__heart {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            .quote {
+                font-size: 1.5rem;
+                position: relative;
+                cursor: pointer;
+                right: 20px;
+                bottom: 20px;
+                opacity: 1;
+            }
+            .transition {
+                font-size: 1.5rem;
+                position: inherit;
+                opacity: 0;
+                right: 20px;
+                bottom: 20px;
+                color: linear-gradient(to right top, #FF79DA, #9356DC);
+            }
+            &:hover {
+                .quote {
+                    opacity: 0;
+                }
+                .transition {
+                    opacity: 1;
+                    transition: opacity 250ms;
+                }
+            }
+        }
+        @media (min-width:768px) {
+            .menu-card {
+                width: 40%;
+                margin-bottom: 40px;
+                &__info {
+                    width: 100%;
+                    margin-right: 10px;
+                    p {
+                        margin-top: 0;
                     }
-                    
-                    @media (min-width:768px) {
-                        .menu-card {
-                            width: 40%;
-                            margin-bottom: 40px;
-                            &__info {
-                                width: 100%;
-                                margin-right: 10px;
-                                p {
-                                    margin-top: 0;
-                                    padding-bottom: 10px;
-                                }
-                            }
-                        }
-                    }
+                }
+            }
+        }
+    }

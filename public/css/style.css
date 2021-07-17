@@ -1,7 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
+/* {
+    box-sizing: border-box;
+}*/
 body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -57,15 +56,12 @@ img {
 }
 
 .menu-button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 95%;
   height: 65px;
   position: relative;
   background-color: white;
-  border: solid 1px white;
   border-radius: 20px;
+  overflow: hidden;
   box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
   margin-bottom: 20px;
   padding-left: 10px;
@@ -83,6 +79,9 @@ img {
   margin-bottom: 0;
   position: absolute;
   top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-button p {
   text-align: left;
@@ -103,21 +102,23 @@ img {
   transition: transform 0.3s ease-in;
 }
 .menu-button:hover > .box {
-  transform: translateX(-80%);
+  transform: translateX(-100%);
 }
 .menu-button:hover > .menu-price {
   transform: translateX(-30%);
 }
+.menu-button:hover > h3 {
+  width: 50%;
+}
 .menu-button:hover > .menu-description {
-  text-overflow: ellipsis;
-  overflow: hidden;
+  width: 50%;
 }
 .menu-button .box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
-  height: 65px;
+  width: 70px;
+  height: 100%;
   position: absolute;
   right: -70px;
   background-color: #99E2D0;
@@ -214,31 +215,29 @@ img {
 }
 .menu-card__heart {
   position: absolute;
-  right: 10px;
-  bottom: 5px;
+  width: 25px;
+  height: 25px;
+  right: 30px;
+  bottom: 30px;
 }
 .menu-card__heart .quote {
-  font-size: 1.5rem;
-  position: relative;
-  cursor: pointer;
-  right: 20px;
-  bottom: 20px;
-  opacity: 1;
+  font-size: 25px;
+  position: inherit;
 }
 .menu-card__heart .transition {
-  font-size: 1.5rem;
+  font-size: 25px;
   position: inherit;
+  color: transparent;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background-clip: text;
   opacity: 0;
-  right: 20px;
-  bottom: 20px;
-  color: linear-gradient(to right top, #FF79DA, #9356DC);
+  transition: opacity 250ms;
 }
 .menu-card__heart:hover .quote {
   opacity: 0;
 }
 .menu-card__heart:hover .transition {
   opacity: 1;
-  transition: opacity 250ms;
 }
 @media (min-width: 768px) {
   .menu-card .menu-card {
@@ -461,14 +460,13 @@ h1 {
   }
 }
 header a {
-  align-self: center;
-  margin-right: 0;
-  position: relative;
-  left: -25%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
 }
 @media (min-width: 768px) {
   header a {
-    left: -30%;
+    top: 30px;
   }
 }
 
@@ -494,7 +492,6 @@ section .menu {
 }
 section .menu h1 {
   font-family: "Shrikhand", sans-serif;
-  margin-left: 0;
 }
 @media (min-width: 768px) {
   section .menu h1 {
@@ -502,12 +499,10 @@ section .menu h1 {
   }
 }
 section .menu .menu-card__heart {
-  top: 5px;
-  right: 0;
+  top: 45px;
 }
 @media (min-width: 768px) {
   section .menu .menu-card__heart {
-    top: 5px;
     right: 60px;
   }
 }
@@ -532,15 +527,15 @@ section .menu i {
 }
 section .menu-title {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  position: relative;
 }
 section .menu-title .border-bottom {
-  border: 1.5px solid #99E2D0;
-  width: 7%;
-  margin-left: 15px;
-  margin-bottom: 15px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 15px;
+  top: 40px;
 }
 @media (min-width: 768px) {
   section .menu-title .border-bottom {
@@ -548,11 +543,12 @@ section .menu-title .border-bottom {
   }
 }
 section .menu-type {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  width: 100%;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   section .menu-type {

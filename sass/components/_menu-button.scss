@@ -1,13 +1,10 @@
 .menu-button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 95%;
     height: 65px;
     position: relative;
     background-color: white;
-    border: solid 1px white;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
     margin-bottom: 20px;
     padding-left: 10px;
@@ -21,7 +18,10 @@
         margin-top: 10px;
         margin-bottom: 0;
         position: absolute;
-        top: 0
+        top: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p {
         text-align: left;
@@ -43,22 +43,24 @@
     }
     &:hover {
         >.box {
-            transform: translateX(-80%);
+            transform: translateX(-100%);
         }
         >.menu-price {
             transform: translateX(-30%);
         }
+        >h3 {
+            width: 50%;
+        }
         >.menu-description {
-            text-overflow: ellipsis;
-            overflow: hidden;
+            width: 50%;
         }
     }
     .box {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 25%;
-        height: 65px;
+        width: 70px;
+        height: 100%;
         position: absolute;
         right: -70px;
         background-color: $tertiary-color;

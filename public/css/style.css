@@ -315,6 +315,9 @@ footer ul li a {
   font-size: 0.9rem;
   font-weight: 400;
 }
+footer ul li a:hover {
+  font-weight: 800;
+}
 
 @media (min-width: 768px) {
   footer {
@@ -323,14 +326,15 @@ footer ul li a {
   }
   footer h3 {
     width: 100%;
-    font-size: 1.6rem;
     margin-bottom: 0;
   }
   footer ul {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    font-size: 1.6rem;
+  }
+  footer ul li > a {
+    font-size: 1rem;
   }
 }
 .loading-spinner {
@@ -361,7 +365,7 @@ footer ul li a {
   border-radius: 50%;
   opacity: 0;
   transform: rotate(0.16turn);
-  animation: loading 2s ease;
+  animation: loading 3s ease;
 }
 
 @keyframes loading {
@@ -560,10 +564,25 @@ section .menu-type {
   justify-content: center;
   position: relative;
   margin-top: 20px;
+  opacity: 0;
+  transform: scaleY(0);
+  animation: menu-anim 2s ease;
+  animation-fill-mode: forwards;
 }
 @media (min-width: 768px) {
   section .menu-type {
     justify-content: space-around;
+  }
+}
+@keyframes menu-anim {
+  from {
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
   }
 }
 

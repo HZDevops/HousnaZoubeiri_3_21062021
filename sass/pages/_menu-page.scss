@@ -75,8 +75,23 @@ section {
         justify-content: center;
         position: relative;
         margin-top: 20px;
+        opacity: 0;
+        transform: scaleY(0);
+        animation: menu-anim 2s ease;
+        animation-fill-mode: forwards;
         @media (min-width: 768px) {
             justify-content: space-around;
+        }
+        @keyframes menu-anim {
+            from {
+                transform-origin: top;
+                transform: scaleY(0);
+                opacity: 0;
+            }
+            to {
+                transform: scaleY(1);
+                opacity: 1;
+            }
         }
     }
 }

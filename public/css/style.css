@@ -334,6 +334,36 @@ footer ul li a {
     font-size: 1.6rem;
   }
 }
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 40%;
+}
+@media (min-width: 768px) {
+  .loading-spinner {
+    right: 45%;
+    top: -10%;
+  }
+}
+
+.loader {
+  align-items: center;
+  height: 100%;
+}
+
+.loading-spinner::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #F2F2F2;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  border-radius: 50%;
+  transform: rotate(0.16turn);
+  animation: loading 1s ease infinite;
+}
+
 .location {
   display: flex;
   flex-wrap: wrap;
@@ -388,7 +418,6 @@ footer ul li a {
 h1 {
   width: 100%;
   font-size: 1.5rem;
-  padding-left: 10%;
   margin-left: 15px;
   margin-top: 40px;
 }

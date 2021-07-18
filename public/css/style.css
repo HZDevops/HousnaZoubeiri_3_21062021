@@ -1,6 +1,7 @@
-/* {
-    box-sizing: border-box;
-}*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -122,8 +123,8 @@ img {
   position: absolute;
   right: -70px;
   background-color: #99E2D0;
-  transform-origin: right 50%;
   border-radius: 0 20px 20px 0;
+  transform-origin: right 50%;
   transition: transform 330ms ease-in-out;
 }
 .menu-button .box i {
@@ -364,7 +365,6 @@ footer ul li a:hover {
   border-bottom-color: #FF79DA;
   border-radius: 50%;
   opacity: 0;
-  transform: rotate(0.16turn);
   animation: loading 3s ease;
 }
 
@@ -493,10 +493,8 @@ section .menu {
   flex-wrap: wrap;
   justify-content: space-around;
   background: #F2F2F2;
-  border: solid 1px #F2F2F2;
   border-radius: 50px 50px 0 0;
   position: relative;
-  z-index: 3;
   top: -80px;
 }
 @media (min-width: 768px) {
@@ -564,8 +562,6 @@ section .menu-type {
   justify-content: center;
   position: relative;
   margin-top: 20px;
-  opacity: 0;
-  transform: scaleY(0);
   animation: menu-anim 2s ease;
   animation-fill-mode: forwards;
 }

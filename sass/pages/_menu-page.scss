@@ -8,16 +8,14 @@ header a {
 }
 
 section {
-    background: #F2F2F2;
+    background: $bkgd-color-two;
     .menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background: #F2F2F2;
-        border: solid 1px $bkgd-color-two;
+        background: $bkgd-color-two;
         border-radius: 50px 50px 0 0;
         position: relative;
-        z-index: 3;
         top: -80px;
         @media (min-width: 768px) {
             border-radius: 50px 50px 0 0;
@@ -59,7 +57,7 @@ section {
         .border-bottom {
             width: 40px;
             height: 3px;
-            background-color: #99E2D0;
+            background-color: $tertiary-color;
             position: absolute;
             left: 15px;
             top: 40px;
@@ -75,8 +73,6 @@ section {
         justify-content: center;
         position: relative;
         margin-top: 20px;
-        opacity: 0;
-        transform: scaleY(0);
         animation: menu-anim 2s ease;
         animation-fill-mode: forwards;
         @media (min-width: 768px) {

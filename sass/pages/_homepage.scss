@@ -23,7 +23,6 @@
             border-bottom-color: $secondary-color;
             border-radius: 50%;
             opacity: 0;
-            transform: rotate(0.16turn);
             animation: loading 3s ease;
         }
         
@@ -80,7 +79,7 @@
             flex-wrap: wrap;
             justify-content: center;
             padding-bottom: 40px;
-            background-color: white;
+            background-color: $bkgd-button;
             h1 {
                 width: 100%;
                 margin-right: 125px;
@@ -97,7 +96,7 @@
         }
         
         .restaurant {
-            background: #F2F2F2;
+            background: $bkgd-color-two;
             padding-bottom: 30px;
             display: flex;
             flex-wrap: wrap;

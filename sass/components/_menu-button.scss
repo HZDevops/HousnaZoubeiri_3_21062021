@@ -64,8 +64,8 @@
         position: absolute;
         right: -70px;
         background-color: $tertiary-color;
-        transform-origin: right 50%;
         border-radius: 0 20px 20px 0;
+        transform-origin: right 50%;
         transition: transform 330ms ease-in-out;
         i {
             color: white;

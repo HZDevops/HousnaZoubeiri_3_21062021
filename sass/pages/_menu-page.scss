@@ -10,15 +10,13 @@ header a {
 section {
     background: $bkgd-color-two;
     .menu {
-        display: flex;
-        flex-wrap: wrap;
+        @include flexbox;
         justify-content: space-around;
         background: $bkgd-color-two;
         border-radius: 50px 50px 0 0;
         position: relative;
         top: -80px;
         @media (min-width: 768px) {
-            border-radius: 50px 50px 0 0;
             top: -100px;
         }
         h1 {
@@ -67,9 +65,8 @@ section {
         }
     }
     .menu-type {
+        @include flexbox;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         position: relative;
         margin-top: 20px;

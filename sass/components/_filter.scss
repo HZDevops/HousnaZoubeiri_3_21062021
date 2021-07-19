@@ -3,13 +3,14 @@
         width: 90%;
         height: 60px;
         background-color: $bkgd-color-two;
-        border: solid 1px $bkgd-color-two;
         border-radius: 20px;
         box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
         margin-bottom: 20px;
-        transition: all 450ms;
-        @media (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 1023px) {
             width: 35%;
+        }
+        @media (min-width: 1024px) {
+            width: 25%;
         }
         .working-filter__number {
             height: 20px;
@@ -17,12 +18,11 @@
             font-size: 0.9rem;
             color: white;
             background-color: $primary-color;
-            border: 1px solid $primary-color;
             border-radius: 50%;
             position: relative;
             left: -10px;
             margin-top: 20px;
-            padding-left: 5px;
+            padding-left: 6px;
         }
         i {
             font-size: 1.1rem;
@@ -38,7 +38,6 @@
         }
         &:hover {
             background-color: $primary-color-light;
-            border: solid 1px $primary-color-light;
             box-shadow: 6px 3px 8px gray;
             .fas {
                 color: $primary-color;

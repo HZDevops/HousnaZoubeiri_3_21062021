@@ -3,9 +3,13 @@
             justify-content: center;
             position: absolute;
             right: 40%;
-            @media (min-width: 768px) {
+            @media(min-width: 768px)and (max-width: 1023px) {
                 right: 45%;
-                top: -10%;
+                bottom: 11%
+            }
+            @media (min-width: 1024px) {
+                right: 47%;
+                top: 75%;
             }
         }
         
@@ -38,8 +42,7 @@
         }
         
         .location {
-            display: flex;
-            flex-wrap: wrap;
+            @include flexbox;
             background-color: $bkgd-color-two;
             padding-bottom: 50px;
         }
@@ -61,8 +64,7 @@
         }
         
         #resto-location__info {
-            display: flex;
-            flex-wrap: wrap;
+            @include flexbox;
             justify-content: center;
             p {
                 margin-bottom: 0;
@@ -75,13 +77,11 @@
         }
         
         #working {
-            display: flex;
-            flex-wrap: wrap;
+            @include flexbox;
             justify-content: center;
             padding-bottom: 40px;
             background-color: $bkgd-button;
             h1 {
-                width: 100%;
                 margin-right: 125px;
                 margin-top: 50px;
                 margin-bottom: 30px;
@@ -96,14 +96,10 @@
         }
         
         .restaurant {
+            @include flexbox;
             background: $bkgd-color-two;
             padding-bottom: 30px;
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            h1 {
-                width: 100%;
-            }
         }
         
         @media (min-width: 768px) {
@@ -112,9 +108,6 @@
             }
             #resto-location__info {
                 width: 100%;
-                h1 {
-                    width: 100%;
-                }
                 p {
                     width: 100%;
                     font-size: 1.1rem;

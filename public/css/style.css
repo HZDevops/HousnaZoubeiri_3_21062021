@@ -137,15 +137,18 @@ img {
   width: 90%;
   height: 60px;
   background-color: #F2F2F2;
-  border: solid 1px #F2F2F2;
   border-radius: 20px;
   box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
   margin-bottom: 20px;
-  transition: all 450ms;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .working-filter {
     width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .working-filter {
+    width: 25%;
   }
 }
 .working-filter .working-filter__number {
@@ -154,12 +157,11 @@ img {
   font-size: 0.9rem;
   color: white;
   background-color: #9356DC;
-  border: 1px solid #9356DC;
   border-radius: 50%;
   position: relative;
   left: -10px;
   margin-top: 20px;
-  padding-left: 5px;
+  padding-left: 6px;
 }
 .working-filter i {
   font-size: 1.1rem;
@@ -175,7 +177,6 @@ img {
 }
 .working-filter:hover {
   background-color: #d9cbeb;
-  border: solid 1px #d9cbeb;
   box-shadow: 6px 3px 8px gray;
 }
 .working-filter:hover .fas {
@@ -271,8 +272,8 @@ img {
 
 header {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -344,10 +345,16 @@ footer ul li a:hover {
   position: absolute;
   right: 40%;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .loading-spinner {
     right: 45%;
-    top: -10%;
+    bottom: 11%;
+  }
+}
+@media (min-width: 1024px) {
+  .loading-spinner {
+    right: 47%;
+    top: 75%;
   }
 }
 
@@ -423,7 +430,6 @@ footer ul li a:hover {
   background-color: white;
 }
 #working h1 {
-  width: 100%;
   margin-right: 125px;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -437,14 +443,11 @@ h1 {
 }
 
 .restaurant {
-  background: #F2F2F2;
-  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
+  background: #F2F2F2;
+  padding-bottom: 30px;
   justify-content: center;
-}
-.restaurant h1 {
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -453,9 +456,6 @@ h1 {
   }
 
   #resto-location__info {
-    width: 100%;
-  }
-  #resto-location__info h1 {
     width: 100%;
   }
   #resto-location__info p {
@@ -499,7 +499,6 @@ section .menu {
 }
 @media (min-width: 768px) {
   section .menu {
-    border-radius: 50px 50px 0 0;
     top: -100px;
   }
 }
@@ -556,9 +555,9 @@ section .menu-title .border-bottom {
   }
 }
 section .menu-type {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
   position: relative;
   margin-top: 20px;

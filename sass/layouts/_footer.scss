@@ -37,8 +37,7 @@ footer {
 
 @media (min-width: 768px) {
     footer {
-        display: flex;
-        flex-wrap: wrap;
+        @include flexbox;
         h3 {
             width: 100%;
             margin-bottom: 0;

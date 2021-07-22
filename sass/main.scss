@@ -1,10 +1,11 @@
 @import "utils/variables";
 @import "utils/mixins";
+@import "utils/animations";
 @import "base/commons";
 @import "components/action-button";
 @import "components/menu-button";
 @import "components/filter-button";
-@import "components/card";
+@import "components/menu-card";
 @import "components/new-flag";
 @import "layouts/header";
 @import "layouts/footer";

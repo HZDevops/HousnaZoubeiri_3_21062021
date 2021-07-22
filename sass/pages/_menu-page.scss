@@ -8,11 +8,11 @@ header a {
 }
 
 section {
-    background: $bkgd-color-two;
+    background: $background-color-two;
     .menu {
         @include flexbox;
         justify-content: space-around;
-        background: $bkgd-color-two;
+        background: $background-color-two;
         border-radius: 50px 50px 0 0;
         position: relative;
         top: -80px;

@@ -9,11 +9,13 @@
 }
 
 footer {
-    background-color: $bkgd-color-one;
-    padding-bottom: 20px;
-    h3 {
+    background-color: $background-color-one;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    h2 {
         font-family: 'Shrikhand', sans-serif;
-        color: $bkgd-button;
+        color: $background-button;
         padding-top: 30px;
         padding-left: 20px;
         margin-top: 0;

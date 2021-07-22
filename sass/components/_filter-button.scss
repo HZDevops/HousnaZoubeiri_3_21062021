@@ -2,7 +2,7 @@
         display: flex;
         width: 90%;
         height: 60px;
-        background-color: $bkgd-color-two;
+        background-color: $background-color-two;
         border-radius: 20px;
         box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
         margin-bottom: 20px;
@@ -24,7 +24,7 @@
             margin-top: 20px;
             padding-left: 6px;
         }
-        i {
+        .working-filter__icon {
             font-size: 1.1rem;
             color: gray;
             margin-top: 20px;

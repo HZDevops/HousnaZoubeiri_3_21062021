@@ -1,0 +1,12 @@
+/***Keyframes loading spinner***/
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+        opacity: 1;
+    }
+    to {
+        transform: rotate(1turn);
+        opacity: 0;
+    }
+}

@@ -1,3 +1,5 @@
+        /***Loading Spinner***/
+        
         .loading-spinner {
             display: flex;
             justify-content: center;
@@ -22,84 +24,77 @@
             content: "";
             width: 50px;
             height: 50px;
-            border: 10px solid $bkgd-color-two;
+            border: 10px solid $background-color-two;
             border-top-color: $primary-color;
             border-bottom-color: $secondary-color;
             border-radius: 50%;
             opacity: 0;
             animation: loading 3s ease;
         }
+        /***Restaurant Localisation Section***/
         
-        @keyframes loading {
-            from {
-                transform: rotate(0turn);
-                opacity: 1;
-            }
-            to {
-                transform: rotate(1turn);
-                opacity: 0;
-            }
-        }
-        
-        .location {
-            @include flexbox;
-            background-color: $bkgd-color-two;
-            padding-bottom: 50px;
-        }
-        
-        #resto-location__city {
-            display: flex;
-            justify-content: center;
+        h2 {
             width: 100%;
+            padding-left: 15px;
+        }
+        
+        #resto-location {
+            @include flexbox;
+            justify-content: center;
             font-size: 0.9rem;
-            color: $bkgd-color-one;
+            color: $background-color-one;
             font-weight: bold;
             background-color: #e7e6e6;
-            box-shadow: 0px 2px 17px 0px rgba(117, 115, 115, 0.44) inset;
+            box-shadow: 0 2px 17px 0 rgba(117, 115, 115, 0.44) inset;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
             i {
-                display: inline;
-                align-self: center;
-                padding-right: 10px;
+                margin-right: 10px;
             }
         }
         
-        #resto-location__info {
+        #resto-info {
             @include flexbox;
             justify-content: center;
+            padding-bottom: 40px;
+            padding-left: 15px;
+            padding-right: 15px;
             p {
+                text-align: center;
                 margin-bottom: 0;
                 margin-top: 0;
             }
             h1 {
                 text-align: center;
                 margin-left: 0;
+                margin-top: 40px;
             }
         }
+        /***Restaurant Filters Section***/
         
-        #working {
+        #resto-working {
             @include flexbox;
             justify-content: center;
             padding-bottom: 40px;
-            background-color: $bkgd-button;
-            h1 {
-                margin-right: 125px;
-                margin-top: 50px;
-                margin-bottom: 30px;
-            }
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: $background-button;
         }
         
-        h1 {
-            width: 100%;
-            font-size: 1.5rem;
-            margin-left: 15px;
-            margin-top: 40px;
-        }
-        
-        .restaurant {
+        #resto-menu {
             @include flexbox;
-            background: $bkgd-color-two;
-            padding-bottom: 30px;
             justify-content: center;
+            background: $background-color-two;
+            padding-bottom: 30px;
+            padding-top: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+            h2 {
+                padding-left: 0;
+            }
         }
         
         @media (min-width: 768px) {
@@ -119,7 +114,7 @@
                 justify-content: space-around;
                 padding-bottom: 20px;
             }
-            .restaurant {
+            #restaurant {
                 justify-content: space-around;
             }
         }

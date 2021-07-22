@@ -1,7 +1,6 @@
     .menu-card {
         @include flexbox;
-        width: 90%;
-        background-color: $bkgd-button;
+        background-color: $background-button;
         border-radius: 20px;
         box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
         margin-bottom: 20px;
@@ -10,21 +9,12 @@
             border-radius: 20px 20px 0 0;
         }
         &__info {
-            @include flexbox;
-            justify-content: space-between;
-            width: 90%;
-            margin-left: 10px;
-            position: relative;
+            padding-left: 10px;
+            padding-bottom: 10px;
             h3 {
-                width: 100%;
                 font-size: 1.1rem;
                 margin-top: 10px;
                 margin-bottom: 5px;
-            }
-            p {
-                width: 50%;
-                margin-top: 0;
-                text-align: left;
             }
         }
         &__heart {
@@ -32,7 +22,7 @@
             width: 25px;
             height: 25px;
             right: 30px;
-            bottom: 30px;
+            bottom: 20px;
             .quote {
                 font-size: 25px;
                 position: inherit;
@@ -43,8 +33,8 @@
                 color: transparent;
                 background: $gradient-color;
                 background-clip: text;
+                -webkit-background-clip: text;
                 opacity: 0;
-                transition: opacity 250ms;
             }
             &:hover {
                 .quote {

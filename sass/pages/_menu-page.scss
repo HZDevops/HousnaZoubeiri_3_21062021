@@ -7,83 +7,66 @@ header a {
     }
 }
 
-section {
+main {
     background: $background-color-two;
     .menu {
         @include flexbox;
-        justify-content: space-around;
         background: $background-color-two;
         border-radius: 50px 50px 0 0;
         position: relative;
-        top: -80px;
+        top: -55px;
+        padding-left: 15px;
+        padding-right: 15px;
         @media (min-width: 768px) {
             top: -100px;
         }
         h1 {
             font-family: 'Shrikhand', sans-serif;
+            margin-right: 70px;
             @media (min-width: 768px) {
                 font-size: 2rem;
             }
         }
         .menu-card__heart {
-            top: 45px;
+            top: 2.2%;
             @media (min-width: 768px) {
+                top: 4%;
                 right: 60px;
             }
+            i {
+                top: 4%;
+                right: 5%;
+                @media (min-width: 768px) {
+                    font-size: 2rem;
+                    top: 7%;
+                    right: 20%
+                }
+            }
         }
-        h2 {
+        .menu-card__type {
+            @include flexbox;
             width: 100%;
-            text-transform: uppercase;
-            font-size: 1rem;
-            font-weight: 100;
-            margin-left: 15px;
-            margin-bottom: 5px;
-        }
-        i {
-            top: 4%;
-            right: 5%;
-            @media (min-width: 768px) {
-                font-size: 2rem;
-                top: 7%;
-                right: 20%
+            position: relative;
+            animation: menu-anim 2s ease;
+            animation-fill-mode: forwards;
+            @media (min-width: 600px) {
+                justify-content: space-around;
             }
-        }
-    }
-    .menu-title {
-        width: 100%;
-        position: relative;
-        .border-bottom {
-            width: 40px;
-            height: 3px;
-            background-color: $tertiary-color;
-            position: absolute;
-            left: 15px;
-            top: 40px;
-            @media (min-width: 768px) {
-                width: 5%;
+            h2 {
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 100;
             }
-        }
-    }
-    .menu-type {
-        @include flexbox;
-        width: 100%;
-        justify-content: center;
-        position: relative;
-        margin-top: 20px;
-        animation: menu-anim 2s ease;
-        animation-fill-mode: forwards;
-        @media (min-width: 768px) {
-            justify-content: space-around;
-        }
-        @keyframes menu-anim {
-            from {
-                transform-origin: top;
-                transform: scaleY(0);
-                opacity: 0;
-            }
-            to {
-                transform: scaleY(1);
-                opacity: 1;
+            .border-bottom {
+                width: 40px;
+                height: 3px;
+                background-color: $tertiary-color;
+                position: absolute;
+                left: 15px;
+                top: 40px;
+                @media (min-width: 768px) {
+                    width: 5%;
+                }
             }
         }
     }

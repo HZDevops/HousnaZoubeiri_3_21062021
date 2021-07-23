@@ -1,4 +1,11 @@
 @mixin flexbox {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

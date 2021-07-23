@@ -1,12 +1,27 @@
 /***Keyframes loading spinner***/
 
-@keyframes loading {
-    from {
+@keyframes loading-spinner {
+    0% {
         transform: rotate(0turn);
         opacity: 1;
     }
-    to {
+    100% {
         transform: rotate(1turn);
         opacity: 0;
+    }
+}
+
+
+/***Keyframes menu checked box***/
+
+@keyframes menu-anim {
+    from {
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
     }
 }

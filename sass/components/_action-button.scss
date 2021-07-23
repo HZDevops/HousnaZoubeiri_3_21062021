@@ -1,4 +1,4 @@
-    .button {
+    .action-button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -9,6 +9,8 @@
         box-shadow: 2px 1px 7px grey;
         color: $background-button;
         margin-top: 35px;
+        animation: menu-anim 2s ease;
+        animation-fill-mode: forwards;
         &:hover {
             background: $secondary-color;
             box-shadow: 6px 3px 8px gray;

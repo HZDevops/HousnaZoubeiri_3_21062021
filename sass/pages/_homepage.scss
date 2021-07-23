@@ -1,120 +1,116 @@
-        /***Loading Spinner***/
-        
-        .loading-spinner {
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            right: 40%;
-            @media(min-width: 768px)and (max-width: 1023px) {
-                right: 45%;
-                bottom: 11%
-            }
-            @media (min-width: 1024px) {
-                right: 47%;
-                top: 75%;
-            }
+/***Loading Spinner***/
+
+.loading-spinner {
+    position: absolute;
+    right: 40%;
+    bottom: 43%;
+    @media(min-width: 768px)and (max-width: 1023px) {
+        right: 45%;
+        bottom: 32%
+    }
+    @media (min-width: 1024px) {
+        right: 47%;
+        top: 75%;
+    }
+}
+
+.loading-spinner::after {
+    content: " ";
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top-color: $primary-color;
+    border-bottom-color: $secondary-color;
+    animation: loading-spinner 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+
+/***Restaurant Location Section***/
+
+#resto-location {
+    display: flex;
+    font-weight: bold;
+    background-color: #e7e6e6;
+    box-shadow: 0 2px 17px 0 rgba(117, 115, 115, 0.44) inset;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    h2 {
+        font-size: 0.9rem;
+        color: $background-color-one;
+        padding-left: 0;
+        i {
+            padding-right: 15px;
         }
-        
-        .loader {
-            align-items: center;
-            height: 100%;
-        }
-        
-        .loading-spinner::after {
-            content: "";
-            width: 50px;
-            height: 50px;
-            border: 10px solid $background-color-two;
-            border-top-color: $primary-color;
-            border-bottom-color: $secondary-color;
-            border-radius: 50%;
-            opacity: 0;
-            animation: loading 3s ease;
-        }
-        /***Restaurant Localisation Section***/
-        
-        h2 {
+    }
+}
+
+
+/*** Restaurant Details Section***/
+
+#resto-info {
+    @include flexbox;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    p {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    h1 {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+
+
+/***Restaurant Filters Section***/
+
+#resto-working {
+    @include flexbox;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: $background-button;
+}
+
+
+/***Restaurant Cards Section***/
+
+#resto-menu {
+    @include flexbox;
+    background: $background-color-two;
+    padding-bottom: 30px;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    h2 {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #resto-location h2 {
+        font-size: 1.2rem;
+    }
+    #resto-working {
+        display: flex;
+        justify-content: space-around;
+    }
+    #resto-menu {
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+    #resto-info {
+        p {
             width: 100%;
-            padding-left: 15px;
+            font-size: 1.1rem;
         }
-        
-        #resto-location {
-            @include flexbox;
-            justify-content: center;
-            font-size: 0.9rem;
-            color: $background-color-one;
-            font-weight: bold;
-            background-color: #e7e6e6;
-            box-shadow: 0 2px 17px 0 rgba(117, 115, 115, 0.44) inset;
-            padding-bottom: 15px;
-            padding-top: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-            i {
-                margin-right: 10px;
-            }
-        }
-        
-        #resto-info {
-            @include flexbox;
-            justify-content: center;
-            padding-bottom: 40px;
-            padding-left: 15px;
-            padding-right: 15px;
-            p {
-                text-align: center;
-                margin-bottom: 0;
-                margin-top: 0;
-            }
-            h1 {
-                text-align: center;
-                margin-left: 0;
-                margin-top: 40px;
-            }
-        }
-        /***Restaurant Filters Section***/
-        
-        #resto-working {
-            @include flexbox;
-            justify-content: center;
-            padding-bottom: 40px;
-            padding-top: 20px;
-            padding-left: 15px;
-            padding-right: 15px;
-            background-color: $background-button;
-        }
-        
-        #resto-menu {
-            @include flexbox;
-            justify-content: center;
-            background: $background-color-two;
-            padding-bottom: 30px;
-            padding-top: 0px;
-            padding-left: 15px;
-            padding-right: 15px;
-            h2 {
-                padding-left: 0;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            #resto-location__city {
-                font-size: 1rem;
-            }
-            #resto-location__info {
-                width: 100%;
-                p {
-                    width: 100%;
-                    font-size: 1.1rem;
-                    text-align: center;
-                }
-            }
-            #working {
-                display: flex;
-                justify-content: space-around;
-                padding-bottom: 20px;
-            }
-            #restaurant {
-                justify-content: space-around;
-            }
-        }
+    }
+}

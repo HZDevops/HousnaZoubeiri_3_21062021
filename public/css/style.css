@@ -111,6 +111,11 @@ img {
     width: 35%;
   }
 }
+@media (min-width: 1100px) {
+  .menu-button {
+    width: 30%;
+  }
+}
 .menu-button h3 {
   white-space: nowrap;
   text-overflow: ellipsis;

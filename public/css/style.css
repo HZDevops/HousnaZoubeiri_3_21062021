@@ -263,6 +263,7 @@ img {
 .menu-card__heart .transition {
   font-size: 25px;
   position: inherit;
+  background-clip: border-box;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -263,10 +263,9 @@ img {
 .menu-card__heart .transition {
   font-size: 25px;
   position: inherit;
-  color: transparent;
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
-  background-clip: text;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
 }
 .menu-card__heart:hover .quote {
@@ -379,13 +378,13 @@ footer ul li a:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .loading-spinner {
     right: 45%;
-    bottom: 32%;
+    bottom: 55%;
   }
 }
 @media (min-width: 1024px) {
   .loading-spinner {
-    right: 47%;
-    top: 75%;
+    right: 45%;
+    top: 40%;
   }
 }
 

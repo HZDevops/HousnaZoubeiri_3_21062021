@@ -31,10 +31,9 @@
         .transition {
             font-size: 25px;
             position: inherit;
-            color: transparent;
-            background: $gradient-color;
-            background-clip: text;
+            background: -webkit-linear-gradient($primary-color, $secondary-color);
             -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             opacity: 0;
         }
         &:hover {

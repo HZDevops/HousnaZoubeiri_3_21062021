@@ -1,23 +1,25 @@
-    .action-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 50px;
-        border-radius: 50px;
-        background: $gradient-color;
-        box-shadow: 2px 1px 7px grey;
-        color: $background-button;
-        margin-top: 35px;
-        animation: menu-anim 2s ease;
-        animation-fill-mode: forwards;
-        &:hover {
-            background: $secondary-color;
-            box-shadow: 6px 3px 8px gray;
-        }
-        @media (min-width: 768px) {
-            width: 300px;
-            height: 50px;
-            font-size: larger;
-        }
+.action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: $gradient-color;
+    box-shadow: 2px 1px 7px grey;
+    color: $background-button;
+    margin-top: 35px;
+    animation: menu-anim 2s ease;
+    animation-fill-mode: forwards;
+
+    &:hover {
+        background: $secondary-color;
+        box-shadow: 6px 3px 8px gray;
     }
+
+    @media (min-width: 768px) {
+        width: 300px;
+        height: 50px;
+        font-size: larger;
+    }
+}

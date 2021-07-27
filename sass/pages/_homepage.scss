@@ -4,10 +4,12 @@
     position: absolute;
     right: 40%;
     bottom: 43%;
+
     @media(min-width: 768px)and (max-width: 1023px) {
         right: 45%;
         bottom: 55%
     }
+
     @media (min-width: 1024px) {
         right: 45%;
         top: 40%;
@@ -38,10 +40,12 @@
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
+
     h2 {
         font-size: 0.9rem;
         color: $background-color-one;
         padding-left: 0;
+
         i {
             padding-right: 15px;
         }
@@ -56,11 +60,13 @@
     padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
+
     p {
         text-align: center;
         margin-bottom: 0;
         margin-top: 0;
     }
+
     h1 {
         text-align: center;
         margin-left: 0;
@@ -73,10 +79,7 @@
 
 #resto-working {
     @include flexbox;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 20px 15px 40px 15px;
     background-color: $background-button;
 }
 
@@ -86,10 +89,8 @@
 #resto-menu {
     @include flexbox;
     background: $background-color-two;
-    padding-bottom: 30px;
-    padding-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px 30px 15px;
+
     h2 {
         padding-left: 0;
     }
@@ -99,14 +100,17 @@
     #resto-location h2 {
         font-size: 1.2rem;
     }
+
     #resto-working {
         display: flex;
         justify-content: space-around;
     }
+
     #resto-menu {
         justify-content: space-around;
         padding-top: 30px;
     }
+
     #resto-info {
         p {
             width: 100%;

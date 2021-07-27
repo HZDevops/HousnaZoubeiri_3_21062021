@@ -6,28 +6,34 @@
     box-shadow: -2px 15px 9px -5px rgba(165, 164, 164, 0.29);
     margin-bottom: 20px;
     position: relative;
+
     &__image {
         border-radius: 20px 20px 0 0;
     }
+
     &__info {
         padding-left: 10px;
         padding-bottom: 10px;
+
         h3 {
             font-size: 1.1rem;
             margin-top: 10px;
             margin-bottom: 5px;
         }
     }
+
     &__heart {
         position: absolute;
         width: 25px;
         height: 25px;
         right: 30px;
         bottom: 20px;
+
         .quote {
             font-size: 25px;
             position: inherit;
         }
+
         .transition {
             font-size: 25px;
             position: inherit;
@@ -37,10 +43,12 @@
             -webkit-text-fill-color: transparent;
             opacity: 0;
         }
+
         &:hover {
             .quote {
                 opacity: 0;
             }
+
             .transition {
                 opacity: 1;
             }
@@ -52,8 +60,10 @@
     .menu-card {
         width: 40%;
         margin-bottom: 40px;
+
         &__info {
             width: 100%;
+
             span {
                 margin-top: 0;
             }

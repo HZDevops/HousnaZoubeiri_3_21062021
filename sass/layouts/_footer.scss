@@ -3,6 +3,7 @@ footer {
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
+
     h2 {
         font-family: 'Shrikhand', sans-serif;
         font-size: 1.2rem;
@@ -11,23 +12,29 @@ footer {
         padding-left: 20px;
         margin-top: 0;
     }
+
     ul {
         list-style-type: none;
         padding-left: 20px;
+
         li {
             margin-bottom: 10px;
+
             a {
                 color: $background-button;
                 font-size: 0.9rem;
                 font-weight: 400;
+
                 .fa-utensils {
                     font-size: 0.8rem;
                     margin-right: 15px;
                 }
+
                 .fa-hands-helping {
                     font-size: 0.8rem;
                     margin-right: 10px;
                 }
+
                 &:hover {
                     font-weight: 800;
                 }
@@ -39,14 +46,17 @@ footer {
 @media (min-width: 768px) {
     footer {
         @include flexbox;
+
         h3 {
             width: 100%;
             margin-bottom: 0;
         }
+
         ul {
             display: flex;
             width: 100%;
             justify-content: space-around;
+
             li>a {
                 font-size: 1rem;
             }

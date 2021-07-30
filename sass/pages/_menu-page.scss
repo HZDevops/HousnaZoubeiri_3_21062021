@@ -26,30 +26,20 @@ main {
 
         h1 {
             font-family: 'Shrikhand', sans-serif;
-            margin-right: 70px;
+            margin-right: 50px;
 
             @media (min-width: 768px) {
                 font-size: 2rem;
             }
         }
 
-        .menu-card__heart {
-            top: 2.2%;
+        .menu-card__quote {
+            left: -20px;
+            top: 25px;
 
             @media (min-width: 768px) {
-                top: 4%;
-                right: 60px;
-            }
-
-            i {
-                top: 4%;
-                right: 5%;
-
-                @media (min-width: 768px) {
-                    font-size: 2rem;
-                    top: 7%;
-                    right: 20%
-                }
+                left: 50px;
+                top: 35px;
             }
         }
 

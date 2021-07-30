@@ -12,45 +12,47 @@
     }
 
     &__info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
         padding-left: 10px;
         padding-bottom: 10px;
 
         h3 {
+            width: 80%;
             font-size: 1.1rem;
             margin-top: 10px;
             margin-bottom: 5px;
         }
     }
 
-    &__heart {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: 30px;
-        bottom: 20px;
+    &__quote {
+        position: relative;
+        left: 50px;
+        top: 20px;
+        font-size: 25px;
+        z-index: 0;
 
-        .quote {
-            font-size: 25px;
-            position: inherit;
+        @media (min-width:900px) {
+            left: 90px;
+            top: 20px;
         }
 
         .transition {
-            font-size: 25px;
-            position: inherit;
+            position: absolute;
+            left: 0;
+            height: 0;
+            z-index: -1;
             background-clip: border-box;
             background: -webkit-linear-gradient($primary-color, $secondary-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            opacity: 0;
         }
 
         &:hover {
-            .quote {
-                opacity: 0;
-            }
-
             .transition {
-                opacity: 1;
+                animation: progress-anim 1s linear;
+                animation-fill-mode: forwards;
             }
         }
     }
@@ -60,13 +62,5 @@
     .menu-card {
         width: 40%;
         margin-bottom: 40px;
-
-        &__info {
-            width: 100%;
-
-            span {
-                margin-top: 0;
-            }
-        }
     }
 }

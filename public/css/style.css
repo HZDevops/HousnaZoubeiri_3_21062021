@@ -83,7 +83,7 @@ img {
   width: 200px;
   height: 50px;
   border-radius: 50px;
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #1C3144, #ecb84a);
   box-shadow: 2px 1px 7px grey;
   color: white;
   margin-top: 35px;
@@ -91,7 +91,7 @@ img {
   animation-fill-mode: forwards;
 }
 .action-button:hover {
-  background: #FF79DA;
+  background: #ecb84a;
   box-shadow: 6px 3px 8px gray;
 }
 @media (min-width: 768px) {
@@ -183,7 +183,7 @@ img {
   position: absolute;
   right: -70px;
   top: 0;
-  background-color: #99E2D0;
+  background-color: #3d5f7c;
   border-radius: 0 20px 20px 0;
   transform-origin: right 50%;
   transition: transform 330ms ease-in-out;
@@ -217,7 +217,7 @@ img {
   width: 20px;
   font-size: 0.9rem;
   color: white;
-  background-color: #9356DC;
+  background-color: #3d5f7c;
   border-radius: 50%;
   position: relative;
   left: -10px;
@@ -237,11 +237,11 @@ img {
   margin-left: 25px;
 }
 .working-filter:hover {
-  background-color: #d9cbeb;
+  background-color: #a8c3db;
   box-shadow: 6px 3px 8px gray;
 }
 .working-filter:hover .fas {
-  color: #9356DC;
+  color: #3d5f7c;
 }
 
 .menu-card {
@@ -290,7 +290,7 @@ img {
   height: 0;
   z-index: -1;
   background-clip: border-box;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: -webkit-linear-gradient(#a8c3db, #ecb84a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -310,8 +310,8 @@ img {
   position: absolute;
   right: 10px;
   top: 15px;
-  background-color: #99E2D0;
-  color: #1a8f72;
+  background-color: #3d5f7c;
+  color: white;
   font-weight: bold;
   padding: 5px 10px 5px 10px;
 }
@@ -410,8 +410,8 @@ footer ul li a:hover {
   height: 65px;
   border-radius: 50%;
   border: 6px solid transparent;
-  border-top-color: #9356DC;
-  border-bottom-color: #FF79DA;
+  border-top-color: #3d5f7c;
+  border-bottom-color: #ecb84a;
   animation: loading-spinner 0.5s linear;
   animation-fill-mode: forwards;
 }
@@ -567,7 +567,7 @@ main .menu .menu-card__type h2 {
 main .menu .menu-card__type .border-bottom {
   width: 40px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #3d5f7c;
   position: absolute;
   left: 15px;
   top: 40px;
